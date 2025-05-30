@@ -1,9 +1,15 @@
-import React from 'react'
+import Header from "./Header";
+import Footer from "./Footer";
+import { MyProps } from "@/interfaces";
 
-const Layout = () => {
+const Layout: React.FC<MyProps> = ({ children }) => {
   return (
-    <div>Layout</div>
-  )
+    <>
+      <Header />
+      <main className="min-h-screen">{children}</main>
+      <Footer />
+    </>
+  );
 }
 
-export default Layout
+export default Layout;

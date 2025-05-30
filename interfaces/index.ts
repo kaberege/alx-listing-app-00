@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface CardProps {
   title: string;
   image: string;
@@ -8,6 +10,10 @@ export interface ButtonProps {
   label: string;
   onClick?: () => void;
   type?: 'button' | 'submit' | 'reset';
+}
+
+export type MyProps = {
+  children: ReactNode;
 }
 
 export interface PropertyProps {
