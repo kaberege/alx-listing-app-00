@@ -1,8 +1,102 @@
-import { PropertyProps } from "@/interfaces";
-export const arr = [1,2,3,4,5,6,7];
-export const API_BASE_URL = 'https://api.example.com';
-export const PLACEHOLDER_IMAGE = '/assets/placeholder.jpg';
-export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
+import { PropertyProps, AcommodationProps } from "@/interfaces";
+import Rooms from "@/public/assets/logos/living-room 1.png"
+import Mansion from "@/public/assets/logos/mansion 1.png"
+import CountrySide from "@/public/assets/logos/farm 1.png"
+import Villa from "@/public/assets/logos/villa 1.png"
+import Tropical from "@/public/assets/logos/palm-tree 1.png"
+import New from "@/public/assets/logos/key-chain 1.png"
+import AmazingPool from "@/public/assets/logos/swimming-pool 1.png"
+import BeechHouse from "@/public/assets/logos/vacations 1.png"
+import Island from "@/public/assets/logos/island (1) 1.png"
+import Camping from "@/public/assets/logos/tent 1.png"
+import Apartment from "@/public/assets/logos/apartment 1.png"
+import House from "@/public/assets/logos/home 1.png"
+import LakeFront from "@/public/assets/logos/cottage 1.png"
+import FarmHouse from "@/public/assets/logos/barn 1.png"
+import TreeHouse from "@/public/assets/logos/treehouse (1) 1.png"
+import Cabins from "@/public/assets/logos/cabin 1.png"
+import Castle from "@/public/assets/logos/castle-tower 1.png"
+import LakeSide from "@/public/assets/logos/farm 1-1.png"
+
+
+// Data for types of accommodation
+export const TypesOfAcommodation: AcommodationProps[] = [
+  {
+    name: "Rooms",
+    image: Rooms
+  },
+  {
+    name: "Mansion",
+    image: Mansion
+  },
+  {
+    name: "Countryside",
+    image: CountrySide
+  },
+  {
+    name: "Villa",
+    image: Villa
+  },
+  {
+    name: "Tropical",
+    image: Tropical
+  },
+  {
+    name: "New",
+    image: New
+  },
+  {
+    name: "Amazing pool",
+    image: AmazingPool
+  },
+  {
+    name: "Beech house",
+    image: BeechHouse
+  },
+  {
+    name: "Island",
+    image: Island
+  },
+  {
+    name: "Camping",
+    image: Camping
+  },
+  {
+    name: "Apartement",
+    image: Apartment
+  },
+  {
+    name: "House",
+    image: House
+  },
+  {
+    name: "Lake front",
+    image: LakeFront
+  },
+  {
+    name: "Farm house",
+    image: FarmHouse
+  },
+  {
+    name: "Tree house",
+    image: TreeHouse
+  },
+  {
+    name: "Cabins",
+    image: Cabins
+  },
+  {
+    name: "Castles",
+    image: Castle
+  },
+  {
+    name: "Lakeside",
+    image: LakeSide
+  },
+];
+
+// Listing Section data:
+export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   {
     name: "Villa Ocean Breeze",
     address: {
