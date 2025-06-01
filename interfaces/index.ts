@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image";
+
 import { ReactNode } from "react";
 
 export interface CardProps {
@@ -9,9 +9,9 @@ export interface CardProps {
 
 // Defines accomodation types
 export interface AcommodationProps {
-    name: string; 
-    image: StaticImageData; 
-  }
+  name: string;
+  image: string;
+}
 
 export interface ButtonProps {
   label: string;

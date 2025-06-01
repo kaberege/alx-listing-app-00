@@ -1,9 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Minimalistic from '@/public/assets/icons/linear/school/Case Minimalistic.png'
-import alxLogo from '@/public/assets/hero-section-image/alx-black.png'
-import Magnifer from '@/public/assets/icons/linear/search/Magnifer.png'
-import Profile from '@/public/assets/icons/profile 2.png'
 import { TypesOfAcommodation } from '@/constants'
 
 const Header = () => {
@@ -12,7 +8,7 @@ const Header = () => {
       <section className='bg-teal-600 p-2'>
         <div className='flex items-center justify-center gap-3'>
           <Image
-            src={Minimalistic}
+            src="/assets/icons/linear/school/Case Minimalistic.png"
             width={24}
             height={24}
             alt="Email box"
@@ -30,7 +26,7 @@ const Header = () => {
       <section className='py-4 border-b-[1px] border-b-neutral-300'>
         <div className='w-full max-w-7xl bg-white flex items-center justify-between px-2 sm:px-4  xl:px-1 mx-auto'>
           <Image
-            src={alxLogo}
+            src="/assets/hero-section-image/alx-black.png"
             width={58.75}
             height={30.6}
             alt='alx logo'
@@ -45,7 +41,7 @@ const Header = () => {
                   <input
                     type="search"
                     name="location"
-                    id="location"
+                    id="locations"
                     className='text-neutral-500 text-[11px] outline-none w-[66px]'
                     placeholder='Location'
                   />
@@ -53,7 +49,7 @@ const Header = () => {
                   <input
                     type="date"
                     name="check-out"
-                    id="check-out"
+                    id="check-outs"
                     className='text-neutral-500 text-[11px] outline-none w-[50px]'
                     placeholder='Date'
                   />
@@ -61,7 +57,7 @@ const Header = () => {
                   <input
                     type="search"
                     name="people"
-                    id="people"
+                    id="person"
                     className='text-neutral-500 text-[11px] outline-none w-[80px]'
                     placeholder='Add guest'
                   />
@@ -111,7 +107,7 @@ const Header = () => {
               </div>
               <button className='flex items-center justify-center w-6 h-6 sm:w-9 sm:h-9 rounded-full bg-amber-500 hover:bg-amber-400 transition-colors cursor-pointer'>
                 <Image
-                  src={Magnifer}
+                  src="/assets/icons/linear/search/Magnifer.png"
                   width={20}
                   height={20}
                   alt='Search'
@@ -122,7 +118,7 @@ const Header = () => {
           </div>
           <button className='lg:hidden flex items-center justify-center rounded-full w-[30px] h-[30px] bg-teal-600'>
             <Image
-              src={Profile}
+              src="/assets/icons/profile 2.png"
               width={30}
               height={30}
               alt='profile'

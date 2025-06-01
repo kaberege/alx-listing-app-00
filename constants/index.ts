@@ -1,97 +1,85 @@
 import { PropertyProps, AcommodationProps } from "@/interfaces";
-import Rooms from "@/public/assets/logos/living-room 1.png"
-import Mansion from "@/public/assets/logos/mansion 1.png"
-import CountrySide from "@/public/assets/logos/farm 1.png"
-import Villa from "@/public/assets/logos/villa 1.png"
-import Tropical from "@/public/assets/logos/palm-tree 1.png"
-import New from "@/public/assets/logos/key-chain 1.png"
-import AmazingPool from "@/public/assets/logos/swimming-pool 1.png"
-import BeechHouse from "@/public/assets/logos/vacations 1.png"
-import Island from "@/public/assets/logos/island (1) 1.png"
-import Camping from "@/public/assets/logos/tent 1.png"
-import Apartment from "@/public/assets/logos/apartment 1.png"
-import House from "@/public/assets/logos/home 1.png"
-import LakeFront from "@/public/assets/logos/cottage 1.png"
-import FarmHouse from "@/public/assets/logos/barn 1.png"
-import TreeHouse from "@/public/assets/logos/treehouse (1) 1.png"
-import Cabins from "@/public/assets/logos/cabin 1.png"
-import Castle from "@/public/assets/logos/castle-tower 1.png"
-import LakeSide from "@/public/assets/logos/farm 1-1.png"
 
+
+import star12 from "@/public/assets/listing-images/List 4-1.png"
+import star13 from "@/public/assets/listing-images/List 5.png"
+import star14 from "@/public/assets/listing-images/List 6.png"
+import star15 from "@/public/assets/listing-images/List 7.png"
+import star16 from "@/public/assets/listing-images/List 8.png"
 
 // Data for types of accommodation
 export const TypesOfAcommodation: AcommodationProps[] = [
   {
     name: "Rooms",
-    image: Rooms
+    image: "/assets/logos/living-room 1.png"
   },
   {
     name: "Mansion",
-    image: Mansion
+    image: "/assets/logos/mansion 1.png"
   },
   {
     name: "Countryside",
-    image: CountrySide
+    image: "/assets/logos/farm 1.png"
   },
   {
     name: "Villa",
-    image: Villa
+    image: "/assets/logos/villa 1.png"
   },
   {
     name: "Tropical",
-    image: Tropical
+    image: "/assets/logos/palm-tree 1.png"
   },
   {
     name: "New",
-    image: New
+    image: "/assets/logos/key-chain 1.png"
   },
   {
     name: "Amazing pool",
-    image: AmazingPool
+    image: "/assets/logos/swimming-pool 1.png"
   },
   {
     name: "Beech house",
-    image: BeechHouse
+    image: "/assets/logos/vacations 1.png"
   },
   {
     name: "Island",
-    image: Island
+    image: "/assets/logos/island (1) 1.png"
   },
   {
     name: "Camping",
-    image: Camping
+    image: "/assets/logos/tent 1.png"
   },
   {
     name: "Apartement",
-    image: Apartment
+    image: "/assets/logos/apartment 1.png"
   },
   {
     name: "House",
-    image: House
+    image: "/assets/logos/home 1.png"
   },
   {
     name: "Lake front",
-    image: LakeFront
+    image: "/assets/logos/cottage 1.png"
   },
   {
     name: "Farm house",
-    image: FarmHouse
+    image: "/assets/logos/barn 1.png"
   },
   {
     name: "Tree house",
-    image: TreeHouse
+    image: "/assets/logos/treehouse (1) 1.png"
   },
   {
     name: "Cabins",
-    image: Cabins
+    image: "/assets/logos/cabin 1.png"
   },
   {
     name: "Castles",
-    image: Castle
+    image: "/assets/logos/castle-tower 1.png"
   },
   {
     name: "Lakeside",
-    image: LakeSide
+    image: "/assets/logos/farm 1-1.png"
   },
 ];
 
@@ -112,7 +100,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-6"
     },
-    image: "https://example.com/image1.jpg",
+    image: "/assets/listing-images/List 1.png",
     discount: ""
   },
   {
@@ -130,7 +118,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "5-7"
     },
-    image: "https://example.com/image2.jpg",
+    image: "/assets/listing-images/List 10.png",
     discount: "30"
   },
   {
@@ -148,7 +136,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "1",
       occupants: "2-3"
     },
-    image: "https://example.com/image3.jpg",
+    image: "/assets/listing-images/List 11.png",
     discount: ""
   },
   {
@@ -166,7 +154,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "2-4"
     },
-    image: "https://example.com/image4.jpg",
+    image: "/assets/listing-images/List 12.png",
     discount: "15"
   },
   {
@@ -184,7 +172,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "4-6"
     },
-    image: "https://example.com/image5.jpg",
+    image: "/assets/listing-images/List 1.png",
     discount: "20"
   },
   {
@@ -202,7 +190,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "4",
       occupants: "8-10"
     },
-    image: "https://example.com/image6.jpg",
+    image: "/assets/listing-images/List 13.png",
     discount: ""
   },
   {
@@ -220,7 +208,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image7.jpg",
+    image: "/assets/listing-images/List 14.png",
     discount: "10"
   },
   {
@@ -238,7 +226,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "5-6"
     },
-    image: "https://example.com/image8.jpg",
+    image: "/assets/listing-images/List 15.png",
     discount: "25"
   },
   {
@@ -256,7 +244,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "1",
       occupants: "2-3"
     },
-    image: "https://example.com/image9.jpg",
+    image: "/assets/listing-images/List 16.png",
     discount: ""
   },
   {
@@ -274,7 +262,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "5-7"
     },
-    image: "https://example.com/image10.jpg",
+    image: "/assets/listing-images/List 2.png",
     discount: "40"
   },
   {
@@ -292,7 +280,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "4",
       occupants: "6-8"
     },
-    image: "https://example.com/image11.jpg",
+    image: "/assets/listing-images/List 3.png",
     discount: "50"
   },
   {
@@ -310,7 +298,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-6"
     },
-    image: "https://example.com/image12.jpg",
+    image: "/assets/listing-images/List 4-1.png",
     discount: ""
   },
   {
@@ -328,7 +316,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "2-4"
     },
-    image: "https://example.com/image13.jpg",
+    image: "/assets/listing-images/List 4.png",
     discount: "35"
   },
   {
@@ -346,7 +334,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "1",
       occupants: "2"
     },
-    image: "https://example.com/image14.jpg",
+    image: "/assets/listing-images/List 6.png",
     discount: ""
   },
   {
@@ -364,7 +352,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "4",
       occupants: "6-8"
     },
-    image: "https://example.com/image15.jpg",
+    image: "/assets/listing-images/List 7.png",
     discount: "20"
   },
   {
@@ -382,7 +370,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "1",
       occupants: "2-4"
     },
-    image: "https://example.com/image16.jpg",
+    image: "/assets/listing-images/List 8.png",
     discount: "25"
   },
   {
@@ -400,7 +388,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "6-8"
     },
-    image: "https://example.com/image17.jpg",
+    image: "/assets/listing-images/list-17.jpg",
     discount: "30"
   },
   {
@@ -418,7 +406,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image18.jpg",
+    image: "/assets/listing-images/list-18.jpg",
     discount: ""
   },
   {
@@ -436,7 +424,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "5",
       occupants: "8-10"
     },
-    image: "https://example.com/image19.jpg",
+    image: "/assets/listing-images/list-19.jpg",
     discount: "60"
   },
   {
@@ -454,7 +442,8 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image20.jpg",
+    image: "/assets/listing-images/list-20.jpg",
     discount: ""
   }
 ];
+
