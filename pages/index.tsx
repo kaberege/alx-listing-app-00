@@ -96,16 +96,25 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section>
+      <section className='relative container max-sm:max-w-[390px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-3 gap-y-8 px-2 md:px-0'>
+        <div
+          className='absolute top-2 left-1 md:-left-1 flex gap-1 rounded-r-full rounded-tl-full bg-teal-600 hover:bg-teal-500 
+        cursor-pointer transition-colors py-1 px-2 shadow-xl shadow-teal-800 z-50'>
+          <Image src="/assets/icons/Discount.png" width={14} height={14} alt="Discount" />
+          <span className='text-sm text-white font-medium'>60% Off</span>
+        </div>
         {
-          PROPERTYLISTINGSAMPLE.map((item, index) => (
-            <div key={index}>
+          PROPERTYLISTINGSAMPLE?.map((item, index) => (
+            <div
+              key={index}
+              className='flex flex-col gap-3'
+            >
               <div>
                 <Image src={item.image} width={98} height={68} alt={item.name}
-                  className=''
+                  className='w-full h-[200px] rounded-2xl cursor-pointer hover:brightness-50'
                 />
               </div>
-              <div className='flex items-center gap-2 text-zinc-900 text-[12.16px] font-medium'>
+              <div className='flex items-center gap-1 text-zinc-900 text-[11px] font-medium whitespace-nowrap overflow-x-hidden'>
                 <button
                   type="button"
                   className='bg-zinc-200 rounded-full px-2 py-1 cursor-pointer hover:bg-teal-100 
@@ -128,36 +137,46 @@ export default function Home() {
                   Free Reschedule
                 </button>
               </div>
-              <div>
+              <div className='flex flex-col gap-3'>
                 <div>
-                  <h2>{item.name}</h2>
-                  <div>
-                    <Image src="/assets/icons/Star 2.png" width={18} height={18} alt='star' />
-                    <span>{item.rating}</span>
+                  <div className='flex items-center justify-between'>
+                    <h2 className='text-zinc-900 text-lg font-semibold'>{item.name}</h2>
+                    <div className='flex items-center justify-center gap-1'>
+                      <Image src="/assets/icons/Star 2.png" width={15} height={15} alt='star' />
+                      <span className='text-zinc-900 text-sm font-medium'>{item.rating}</span>
+                    </div>
                   </div>
+                  <h3
+                    className='text-zinc-600 text-sm font-medium'>
+                    {item.address.state} {item.address.city} {item.address.country}
+                  </h3>
                 </div>
-                <h3>{item.address.state} {item.address.city} {item.address.country}</h3>
-                <div>
-                  <div>
-                    <div>
-                      <Image src="/assets/icons/bed 1.png" width={18} height={18} alt='Bed' />
+                <div className='flex items-center justify-between'>
+                  <div className='flex items-center gap-1 bg-zinc-200 rounded-full px-2 py-1 cursor-pointer hover:bg-teal-100 
+                  hover:text-teal-600 transition-colors text-[11px] sm:ml-1'>
+                    <div className='flex items-center justify-center gap-0.5'>
+                      <Image src="/assets/icons/bed 1.png" width={13} height={13} alt='Bed' />
                       <span>{item.offers.bed}</span>
                     </div>
-                    <div>
-                      <Image src="/assets/icons/bathtub 1.png" width={18} height={18} alt='Shower' />
+                    <div className='flex items-center justify-center gap-0.5'>
+                      <Image src="/assets/icons/bathtub 1.png" width={13} height={13} alt='Shower' />
                       <span>{item.offers.shower}</span>
                     </div>
-                    <div>
-                      <Image src="/assets/icons/people 1.png" width={18} height={18} alt='Occupants' />
+                    <div className='flex items-center justify-center gap-0.5'>
+                      <Image src="/assets/icons/people 1.png" width={13} height={13} alt='Occupants' />
                       <span>{item.offers.occupants}</span>
                     </div>
                   </div>
-                  <span>{item.discount}</span>
+                  <span className='text-zinc-900 text-xs font-semibold'>${item.discount ? item.discount : 0}<sub>/n</sub></span>
                 </div>
               </div>
             </div>
           ))
         }
+      </section>
+      <section className='container flex flex-col items-center justify-center mx-auto'>
+        <button className='px-2 py-1 rounded-full'>Show more</button>
+        <p className='text-center'>Click to see more listings</p>
       </section>
     </>
   );

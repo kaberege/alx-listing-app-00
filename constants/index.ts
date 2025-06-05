@@ -172,7 +172,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "4-6"
     },
-    image: "/assets/listing-images/List 1.png",
+    image: "/assets/listing-images/List 9.png",
     discount: "20"
   },
   {
