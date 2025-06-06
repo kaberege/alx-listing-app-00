@@ -174,9 +174,16 @@ export default function Home() {
           ))
         }
       </section>
-      <section className='container flex flex-col items-center justify-center mx-auto'>
-        <button className='px-2 py-1 rounded-full'>Show more</button>
-        <p className='text-center'>Click to see more listings</p>
+      <section
+        className='container flex flex-col items-center justify-center gap-3 mx-auto 
+        mt-25 mb-9 sm:mt-30 sm:mb-13 lg:mt-20 lg:mb-8'>
+        <button
+          className='text-white hover:text-amber-50 text-xs sm:text-sm text-center cursor-pointer font-medium bg-black rounded-full 
+          px-3 py-1 hover:bg-slate-700 focus:ring-2 focus:ring-slate-950 transition-colors'
+        >
+          Show more
+        </button>
+        <p className='text-sm text-black text-center font-medium'>Click to see more listings</p>
       </section>
     </>
   );

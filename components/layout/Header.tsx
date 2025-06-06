@@ -18,7 +18,7 @@ const Header = () => {
           <p className='text-white text-xs sm:text-base font-semibold'>Overseas trip? Get the latest information on travel guides</p>
           <button
             className='text-white hover:text-amber-50 text-xs sm:text-sm text-center cursor-pointer font-semibold bg-black rounded-full 
-          px-2 py-1 hover:bg-slate-700 transition-colors'>
+          px-2 py-1 hover:bg-slate-700 focus:ring-2 focus:ring-slate-950 transition-colors'>
             More&nbsp;Info
           </button>
         </div>
@@ -127,12 +127,12 @@ const Header = () => {
           </button>
           <div className='flex gap-2 max-lg:hidden'>
             <button
-              className='flex items-center justify-center text-white text-base bg-teal-600 rounded-full 
+              className='flex items-center justify-center text-white text-base bg-teal-600 rounded-full focus:ring-2 focus:ring-teal-800
             py-1 px-3 hover:bg-teal-700 transition-colors cursor-pointer shadow-sm shadow-teal-900'
             >Sign in
             </button>
             <button
-              className='flex items-center justify-center text-zinc-900 text-base rounded-full shadow-sm shadow-zinc-500
+              className='flex items-center justify-center text-zinc-900 text-base rounded-full shadow-sm shadow-zinc-500 focus:ring-2 focus:ring-zinc-700
             border-1 border-neutral-200  hover:bg-neutral-300 transition-colors cursor-pointer py-1 px-3'
             >
               Sign up
